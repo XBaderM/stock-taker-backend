@@ -19,7 +19,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:5000"],
+    origin: [
+      "http://localhost:3000",
+      "https://stock-taker-frontend.vercel.app",
+    ],
     credentials: true,
   })
 );
